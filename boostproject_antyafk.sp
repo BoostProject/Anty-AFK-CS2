@@ -287,7 +287,7 @@ void AFK_UpdateArray() {
 	PrintToServer("[ BoostProject ] Próba nawiązania połączenia z api.");
 	
 	char sApi[PLATFORM_MAX_PATH];
-	Format(sApi, sizeof(sApi), "https://api.boostproject.pro/%s", g_eConfig.sApiKey);
+	Format(sApi, sizeof(sApi), "https://api.boostproject.pro/plugin/send-data");
 	HTTPRequest rRequest = new HTTPRequest(sApi);
 	
 	JSONObject joHead = new JSONObject();
@@ -327,6 +327,7 @@ void AFK_UpdateArray() {
 	}
 	
 	joHead.Set("players", jaPlayerArray);
+    joHead.SetString("key", g_eConfig.sApiKey);
 	rRequest.Post(joHead, OnPlayersReceived);
 	
 	delete jaPlayerArray;
