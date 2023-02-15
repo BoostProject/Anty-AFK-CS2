@@ -144,8 +144,9 @@ public Action Event_OnPlayerSpawn(Event eEvent, char[] sName, bool bDontBroadcas
 	if (!IsPlayerAlive(iClient))
 		return Plugin_Continue;
 	
-	if (g_ePlayer[iClient].hTimer != null)
-		delete g_ePlayer[iClient].hTimer;
+	if (g_ePlayer[iClient].hTimer != null){
+        g_ePlayer[iClient].hTimer = null;
+    }
 	
 	GetClientAbsOrigin(iClient, g_ePlayer[iClient].fSpawnPosition);
 	g_ePlayer[iClient].hTimer = CreateTimer(g_eConfig.fTimer[Timer_Spawn] + FindConVar("mp_freezetime").FloatValue, Timer_CheckPlayer, iClient, TIMER_FLAG_NO_MAPCHANGE);
@@ -170,7 +171,10 @@ public Action Timer_CheckPlayer(Handle hTimer, int iClient) {
 	
 	if (!IsPlayerAlive(iClient))
 		return Plugin_Stop;
-	
+        
+    if (g_ePlayer[iClient].hTimer == null)
+		return Plugin_Stop;
+
 	float fCurrentPosition[3];
 	GetClientAbsOrigin(iClient, fCurrentPosition);
 	if (GetVectorDistance(fCurrentPosition, g_ePlayer[iClient].fSpawnPosition) > 200.0)
