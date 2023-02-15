@@ -83,16 +83,10 @@ public void OnPluginStart() {
 	
 	HookEvent("player_spawn", Event_OnPlayerSpawn);
 	HookEvent("player_death", Event_OnPlayerDeath);
-	RegConsoleCmd("sm_afk", CMD_Afk);
-	RegConsoleCmd("sm_forceapi", CMD_ForceApi);
+    
 	AddCommandListener(Listener_JoinTeam, "jointeam");
 	
 	g_eConfig.alBoosters = new ArrayList(MAXPLAYERS + 1);
-}
-
-public Action CMD_ForceApi(int iClient, int iArgs) {
-	AFK_UpdateArray();
-	return Plugin_Handled;
 }
 
 public void OnConfigsExecuted() {
@@ -182,14 +176,6 @@ public Action Timer_CheckPlayer(Handle hTimer, int iClient) {
 	
 	AFK_CheckPlayer(iClient);
 	return Plugin_Stop;
-}
-
-public Action CMD_Afk(int iClient, int iArgs) {
-	if (!g_ePlayer[iClient].bChecking)
-		return Plugin_Handled;
-	
-	Menu_CheckPlayer().Display(iClient, RoundToFloor(g_eConfig.fTimer[Timer_Menu]));
-	return Plugin_Handled;
 }
 
 public Action Listener_JoinTeam(int iClient, char[] sCommand, int iArgs) {
