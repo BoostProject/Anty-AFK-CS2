@@ -2,6 +2,10 @@
 
 Put boostproject_antyafk.smx in plugins folder
 
+# Download
+
+https://github.com/BoostProject/Anty-AFK/releases
+
 # Requirements
 
 - Multi Colors https://github.com/Bara/Multi-Colors
