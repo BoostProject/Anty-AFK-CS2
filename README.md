@@ -19,3 +19,7 @@ https://github.com/BoostProject/Anty-AFK/releases
 - boost_action - What to do when booster is inactive
     - 0 - kick
     - other - length of the ban in minutes
+
+# FTP
+
+You can use [WinSCP](https://winscp.net/eng/download.php) to connect to ftp of your server
