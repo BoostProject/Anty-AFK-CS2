@@ -49,7 +49,7 @@ enum struct ePlayer {
 	int iAfkCounter;
 	
 	void Reset() {
-		if (this.hTimer != null)delete this.hTimer;
+		if (this.hTimer != null)this.hTimer = null;
 		for (int i = 0; i < 3; i++)this.fSpawnPosition[i] = 0.0;
 		this.bChecking = false;
 		for (int i = 0; i < 2; i++) {
@@ -83,7 +83,7 @@ public void OnPluginStart() {
 	
 	HookEvent("player_spawn", Event_OnPlayerSpawn);
 	HookEvent("player_death", Event_OnPlayerDeath);
-    
+	
 	AddCommandListener(Listener_JoinTeam, "jointeam");
 	
 	g_eConfig.alBoosters = new ArrayList(MAXPLAYERS + 1);
@@ -138,9 +138,9 @@ public Action Event_OnPlayerSpawn(Event eEvent, char[] sName, bool bDontBroadcas
 	if (!IsPlayerAlive(iClient))
 		return Plugin_Continue;
 	
-	if (g_ePlayer[iClient].hTimer != null){
-        g_ePlayer[iClient].hTimer = null;
-    }
+	if (g_ePlayer[iClient].hTimer != null) {
+		g_ePlayer[iClient].hTimer = null;
+	}
 	
 	GetClientAbsOrigin(iClient, g_ePlayer[iClient].fSpawnPosition);
 	g_ePlayer[iClient].hTimer = CreateTimer(g_eConfig.fTimer[Timer_Spawn] + FindConVar("mp_freezetime").FloatValue, Timer_CheckPlayer, iClient, TIMER_FLAG_NO_MAPCHANGE);
@@ -165,10 +165,10 @@ public Action Timer_CheckPlayer(Handle hTimer, int iClient) {
 	
 	if (!IsPlayerAlive(iClient))
 		return Plugin_Stop;
-        
-    if (g_ePlayer[iClient].hTimer == null)
+	
+	if (g_ePlayer[iClient].hTimer == null)
 		return Plugin_Stop;
-
+	
 	float fCurrentPosition[3];
 	GetClientAbsOrigin(iClient, fCurrentPosition);
 	if (GetVectorDistance(fCurrentPosition, g_ePlayer[iClient].fSpawnPosition) > 200.0)
@@ -225,14 +225,13 @@ public int Menu_CheckPlayerCallback(Menu mMenu, MenuAction mAction, int iClient,
 			char sItem[32];
 			mMenu.GetItem(iPosition, sItem, sizeof(sItem));
 			if (!IsValidClient(iClient) || !g_ePlayer[iClient].bChecking) {
-				delete mMenu;
 				return;
 			}
 			
 			if (StrEqual(sItem, "correct")) {
 				g_ePlayer[iClient].bChecking = false;
 				CPrintToChat(iClient, "\x04BoostProject \x08» \x01Udało Ci się przejść test, miej się jednak na baczności.");
-				if (g_ePlayer[iClient].hTimer != null)delete g_ePlayer[iClient].hTimer;
+				if (g_ePlayer[iClient].hTimer != null)g_ePlayer[iClient].hTimer = null;
 				g_ePlayer[iClient].hTimer = CreateTimer(g_eConfig.fTimer[Timer_Spawn], Timer_CheckPlayer, iClient, TIMER_FLAG_NO_MAPCHANGE);
 			} else AFK_ActionWithClient(iClient);
 		}
@@ -317,7 +316,7 @@ void AFK_UpdateArray() {
 	}
 	
 	joHead.Set("players", jaPlayerArray);
-    joHead.SetString("key", g_eConfig.sApiKey);
+	joHead.SetString("key", g_eConfig.sApiKey);
 	rRequest.Post(joHead, OnPlayersReceived);
 	
 	delete jaPlayerArray;
