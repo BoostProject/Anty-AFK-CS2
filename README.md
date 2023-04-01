@@ -20,6 +20,10 @@ https://github.com/BoostProject/Anty-AFK/releases
     - 0 - kick
     - other - length of the ban in minutes
 
+# Config
+
+After restart you can find config for the plugin in ./csgo/cfg/sourcemod/plugin.boostproject_antyafk.cfg
+
 # FTP
 
 You can use [WinSCP](https://winscp.net/eng/download.php) to connect to ftp of your server
