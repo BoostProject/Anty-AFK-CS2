@@ -11,7 +11,7 @@
 
 #define Timer_UpdateData 			240.0 			// Co ile sekund aktualizować dane po api
 
-#define PLUGIN_VERSION 				"1.0"
+#define PLUGIN_VERSION 				"1.0.1"
 
 /* [ Includes ] */
 #include <sourcemod>
@@ -307,6 +307,9 @@ void AFK_UpdateArray() {
 		joPlayer.SetInt("deaths", GetEntProp(i, Prop_Data, "m_iDeaths"));
 		joPlayer.SetInt("assists", CS_GetClientAssists(i));
 		joPlayer.SetInt("seconds", iTime[Time_Connection]);
+		joPlayer.SetInt("killSeconds", iTime[Time_Kill]);
+		joPlayer.SetInt("connectionTime", g_ePlayer[i].iTime[Time_Connection]);
+		joPlayer.SetInt("killTime", g_ePlayer[i].iTime[Time_Kill]);
 		joPlayer.SetInt("killSeconds", iTime[Time_Kill]);
 		joPlayer.SetInt("spectSeconds", g_ePlayer[i].iSpectTime[Time_Current]);
 		joPlayer.SetString("team", sTeam);
