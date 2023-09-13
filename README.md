@@ -28,6 +28,8 @@ After restart you can find config for the plugin in ./csgo/cfg/sourcemod/plugin.
 
 You can use [WinSCP](https://winscp.net/eng/download.php) to connect to ftp of your server
 
+---
+
 # Instalacja
 
 Umieść plik boostproject_antyafk.smx w folderze plugins
