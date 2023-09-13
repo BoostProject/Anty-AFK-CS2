@@ -27,3 +27,33 @@ After restart you can find config for the plugin in ./csgo/cfg/sourcemod/plugin.
 # FTP
 
 You can use [WinSCP](https://winscp.net/eng/download.php) to connect to ftp of your server
+
+# Instalacja
+
+Umieść plik boostproject_antyafk.smx w folderze plugins
+
+# Pobieranie
+
+https://github.com/BoostProject/Anty-AFK/releases
+
+# Wymagania
+
+- Multi Colors https://github.com/Bara/Multi-Colors
+- Ripext https://forums.alliedmods.net/showthread.php?t=298024
+
+# Zmienne (Cvars)
+
+- boost_apikey - Klucz API, który możesz sprawdzić [tutaj](https://boostproject.pro/panel-serwerow)
+- boost_spawntimer - Ile sekund po pojawieniu się gracza sprawdzić jego status w grze
+- boost_menutimer - Ile sekund gracz będzie miał na wybranie odpowiedniej opcji w menu
+- boost_action - Co zrobić, gdy booster jest nieaktywny
+    - 0 - wyrzucić
+    - inne - długość bana w minutach
+
+# Konfiguracja
+
+Po ponownym uruchomieniu możesz znaleźć konfigurację dla wtyczki w ./csgo/cfg/sourcemod/plugin.boostproject_antyafk.cfg
+
+# FTP
+
+Możesz użyć [WinSCP](https://winscp.net/eng/download.php) do połączenia się z FTP twojego serwera
