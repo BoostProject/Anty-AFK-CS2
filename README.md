@@ -8,8 +8,7 @@ https://github.com/BoostProject/Anty-AFK/releases
 
 # Requirements
 
-- Multi Colors https://github.com/Bara/Multi-Colors
-- Ripext https://forums.alliedmods.net/showthread.php?t=298024
+- [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp)
 
 # Cvars
 
@@ -40,8 +39,7 @@ https://github.com/BoostProject/Anty-AFK/releases
 
 # Wymagania
 
-- Multi Colors https://github.com/Bara/Multi-Colors
-- Ripext https://forums.alliedmods.net/showthread.php?t=298024
+- [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp)
 
 # Zmienne (Cvars)
 
