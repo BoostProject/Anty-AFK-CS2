@@ -12,16 +12,16 @@ https://github.com/BoostProject/Anty-AFK/releases
 
 # Cvars
 
-- boost_apikey - API Key which you can check [here](https://boostproject.pro/panel-serwerow)
-- boost_spawntimer - How many seconds after a player spawn check his game status
-- boost_menutimer - How many seconds will the player have to select the relevant option in the menu
-- boost_action - What to do when booster is inactive
+- ApiKey - API Key which you can check [here](https://boostproject.pro/panel-serwerow)
+- SpawnTimer - How many seconds after a player spawn check his game status
+- MenuTimer - How many seconds will the player have to select the relevant option in the menu
+- ActionType - What to do when booster is inactive
     - 0 - kick
     - other - length of the ban in minutes
 
 # Config
 
-After restart you can find config for the plugin in ./csgo/cfg/sourcemod/plugin.boostproject_antyafk.cfg
+You can find config for the plugin in `/addons/counterstrikesharp/configs/Qesik/BoostProjectAfk.json`
 
 # FTP
 
@@ -43,16 +43,16 @@ https://github.com/BoostProject/Anty-AFK/releases
 
 # Zmienne (Cvars)
 
-- boost_apikey - Klucz API, który możesz sprawdzić [tutaj](https://boostproject.pro/panel-serwerow)
-- boost_spawntimer - Ile sekund po pojawieniu się gracza sprawdzić jego status w grze
-- boost_menutimer - Ile sekund gracz będzie miał na wybranie odpowiedniej opcji w menu
-- boost_action - Co zrobić, gdy booster jest nieaktywny
+- ApiKey - Klucz API, który możesz sprawdzić [tutaj](https://boostproject.pro/panel-serwerow)
+- SpawnTimer - Ile sekund po pojawieniu się gracza sprawdzić jego status w grze
+- MenuTimer - Ile sekund gracz będzie miał na wybranie odpowiedniej opcji w menu
+- ActionType - Co zrobić, gdy booster jest nieaktywny
     - 0 - wyrzucić
     - inne - długość bana w minutach
 
 # Konfiguracja
 
-Po ponownym uruchomieniu możesz znaleźć konfigurację dla wtyczki w ./csgo/cfg/sourcemod/plugin.boostproject_antyafk.cfg
+Konfigurację wtyczki znajdziesz w `/addons/counterstrikesharp/configs/Qesik/BoostProjectAfk.json`
 
 # FTP
 
