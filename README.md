@@ -1,6 +1,6 @@
 # Installation
 
-Put boostproject_antyafk.smx in plugins folder
+After downloading the zip file, unpack it, then upload the 'configs' and 'plugins' folders to the `/addons/counterstrikesharp/` folder.
 
 # Download
 
@@ -31,7 +31,7 @@ You can use [WinSCP](https://winscp.net/eng/download.php) to connect to ftp of y
 
 # Instalacja
 
-Umieść plik boostproject_antyafk.smx w folderze plugins
+Po ściagnieciu pliku zip , wypakuj go , następnie foldery configs oraz plugins wgraj do folderu `/addons/counterstrikesharp/`
 
 # Pobieranie
 
