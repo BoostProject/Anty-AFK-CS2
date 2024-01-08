@@ -8,6 +8,7 @@ https://github.com/BoostProject/Anty-AFK/releases
 
 # Requirements
 
+- [Metamod:Source](https://www.metamodsource.net/downloads.php/?branch=master)
 - [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp)
 
 # Cvars
@@ -39,6 +40,7 @@ https://github.com/BoostProject/Anty-AFK/releases
 
 # Wymagania
 
+- [Metamod:Source](https://www.metamodsource.net/downloads.php/?branch=master)
 - [CounterStrikeSharp](https://github.com/roflmuffin/CounterStrikeSharp)
 
 # Zmienne (Cvars)
