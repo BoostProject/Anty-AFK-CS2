@@ -1,8 +1,7 @@
 {
   "qafkboostproject.checkAfkFirstChat": " {purple}⌈︎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀{default}»⠀{purple}ANTY AFK⠀{default}«⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀{purple}⌉︎",
   "qafkboostproject.checkAfkSecondChat": " {green}» {default}Sprawdzamy czy jesteś AFK.",
-  "qafkboostproject.checkAfkThirdChat": " {green}» {default}Jeśli nie wyświetliło Ci się menu wpisz {green}!afk{default}.",
-  "qafkboostproject.checkAfkFourthChat": " {purple}⌊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀{default}»⠀{purple}ANTY AFK⠀{default}«⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀{purple}⌋︎",
+  "qafkboostproject.checkAfkThirdChat": " {purple}⌊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀{default}»⠀{purple}ANTY AFK⠀{default}«⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀{purple}⌋︎",
   "qafkboostproject.RandomCmdChat": " {purple}BoostProject{default} Napisz na czat {green}!{0}{default}.",
   "qafkboostproject.testCompletedChat": " {purple}BoostProject{default} Udało Ci się przejść test, miej się jednak na baczności."
 }
