@@ -22,7 +22,7 @@ https://github.com/BoostProject/Anty-AFK/releases
 
 # Config
 
-You can find config for the plugin in `/addons/counterstrikesharp/configs/Qesik/BoostProjectAfk.json`
+You can find config for the plugin in `/addons/counterstrikesharp/configs/plugins/AfkBoostProject/AfkBoostProject.json`
 
 # FTP
 
@@ -54,7 +54,7 @@ https://github.com/BoostProject/Anty-AFK/releases
 
 # Konfiguracja
 
-Konfigurację wtyczki znajdziesz w `/addons/counterstrikesharp/configs/Qesik/BoostProjectAfk.json`
+Konfigurację wtyczki znajdziesz w `/addons/counterstrikesharp/configs/plugins/AfkBoostProject/AfkBoostProject.json`
 
 # FTP
 
